@@ -14,6 +14,8 @@ jobs:
           registry: ghcr.io
           username: ${{ github.actor }}
           password: ${{ secrets.GITHUB_TOKEN }}
+      - name: Checkout
+        uses: actions/checkout@v2
       - name: Build and Push Container
         run: |-
           docker build -t ghcr.io/jtmiclat/tippecanoe-docker:latest .
