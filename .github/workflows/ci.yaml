@@ -1,4 +1,4 @@
-name: ci
+name: Build and Push Image
 
 on:
   push:
@@ -16,7 +16,7 @@ jobs:
           password: ${{ secrets.GITHUB_TOKEN }}
       - name: Checkout
         uses: actions/checkout@v2
-      - name: Build and Push Container
+      - name: Build and Push Image
         run: |-
           docker build -t ghcr.io/jtmiclat/tippecanoe-docker:latest .
           docker push ghcr.io/jtmiclat/tippecanoe-docker:latest
