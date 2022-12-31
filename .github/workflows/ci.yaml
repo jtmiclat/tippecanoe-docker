@@ -19,4 +19,4 @@ jobs:
       - name: Build and Push Container
         run: |-
           docker build -t ghcr.io/jtmiclat/tippecanoe-docker:latest .
-          docker push ghcr.io/jtmiclat/tippecanoe-docker latest
+          docker push ghcr.io/jtmiclat/tippecanoe-docker:latest
