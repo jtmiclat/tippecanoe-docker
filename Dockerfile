@@ -14,7 +14,7 @@ RUN make && make install
 CMD make test
 
 
-FROM ubuntu:22.04
+FROM ubuntu:22.04-slim
 RUN apt-get update \
   && apt-get -y install libsqlite3-dev zlib1g-dev \
   && rm -rf /var/lib/apt/lists/*
