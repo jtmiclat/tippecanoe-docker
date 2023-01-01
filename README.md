@@ -20,6 +20,6 @@ docker build -t ghcr.io/jtmiclat/tippecanoe-docker:latest . --build-arg TIPPACAN
 ```
 ## Explanation
 
-This is a multistage docker build of [felt's fork of tippecanoe](https://github.com/felt/tippecanoe). This version is concidered the actively maintained version of tippecanoe.
+This is a multistage docker build of [felt's fork of tippecanoe](https://github.com/felt/tippecanoe). The fork is considered the actively maintained version of tippecanoe.
 
 Currently, there is no easy way to access the functionality of tippecanoe without compiling it yourself as there is no pre built binaries released or actively maintained docker image. This repo hopes to provide a simple solution way of using the.
