@@ -20,5 +20,5 @@ docker build -t ghcr.io/jtmiclat/tippecanoe-docker:latest .
 Feel free to update dockefile or pass `TIPPACANOE_VERSION` arg to use a specific version of tippecanoe.
 
 ```
-docker build -t ghcr.io/jtmiclat/tippecanoe-docker:latest . --build-arg TIPPACANOE_VERSION=2.17.0
+docker build -t ghcr.io/jtmiclat/tippecanoe-docker:latest . --build-arg TIPPACANOE_VERSION=2.22.0
 ```
