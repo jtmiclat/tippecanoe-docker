@@ -3,7 +3,7 @@ FROM ubuntu:22.04 AS tippacanoe-builder
 RUN apt-get update \
   && apt-get -y install build-essential libsqlite3-dev zlib1g-dev git
 
-ARG TIPPACANOE_VERSION=2.26.1 
+ARG TIPPACANOE_VERSION=2.37.1 
 
 RUN git clone --depth 1 https://github.com/felt/tippecanoe.git --branch ${TIPPACANOE_VERSION} --single-branch /tmp/tippecanoe-src
 
